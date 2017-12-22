@@ -12,7 +12,7 @@ firebase.initializeApp(config);
 firebase.auth().onAuthStateChanged(user => {
   console.log("Auth state changed")
   if(user){
-    window.location = "wall.html"
+    window.location = "html/wall.html"
 
   }
 });
