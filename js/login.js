@@ -19,7 +19,9 @@ function signIn(){
     var email = "";
     if(username.length != 0 && password.length != 0){
       firebase.database().ref('accounts/'+username).once('value', function(snapshot) {
-          email = snapshot.child('email').val();
+          if(snapshot.exists()){
+            email = snapshot.child('email').val();
+          }
       }).then(() => {
          if(email.length != 0){
         firebase.auth().signInWithEmailAndPassword(email, password).catch(function( error) {
