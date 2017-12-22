@@ -21,7 +21,7 @@ function signIn(){
       firebase.database().ref('accounts/'+username).once('value', function(snapshot) {
           email = snapshot.child('email').val();
       }).then(() => {
-
+         if(email.length != 0){
         firebase.auth().signInWithEmailAndPassword(email, password).catch(function( error) {
           succesfulLogin = false;
           var errorCode = error.code;
@@ -33,8 +33,13 @@ function signIn(){
           }
           console.log(error);
         });
+         alert("Logging in")
+         } else {
+           alert("Invalid Username or Password")
+         }
+          
       });
-      alert("Logging in")
+      
     } else {
       alert("Invalid Username or Password")
     }
