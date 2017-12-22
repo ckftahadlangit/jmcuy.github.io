@@ -107,19 +107,18 @@ function signUp () {
 
         var databaseRef = firebase.database().ref('accounts');
         databaseRef.once('value', function(snapshot) {
-	  
             console.log("in progress: checking if username is still available");
 	    console.log(snapshot.exists());
 	    if(snapshot.exists(){
-	    var arr = snapshot.val();
-	    var arr2 = Object.keys(arr);
-	    for (i = 0; i < arr2.length; i++){
-		console.log(username + " " + arr2[i]);
-		if(username == arr2[i]){
-		    valid_account = false;
-		    alert("Invalid!!! Username " + username + " is already taken");
-		}
-	    }
+	        var arr = snapshot.val();
+	        var arr2 = Object.keys(arr);
+	        for (i = 0; i < arr2.length; i++){
+		    console.log(username + " " + arr2[i]);
+		    if(username == arr2[i]){
+		        valid_account = false;
+		        alert("Invalid!!! Username " + username + " is already taken");
+		    }
+	        }
 	    }
         }).then(() =>{
             if(valid_account){
