@@ -98,7 +98,7 @@ function signUp () {
     gender = document.getElementById('user_gender_id').value
     if (checkvalidity()){
       	var g =''
-    	if(gender = 1){
+    	if(gender == 1){
     		g = 'Female';
     	} else {
     		g = 'Male';
