@@ -65,7 +65,6 @@ function goToProfile(username) {
 }
 
 function askProfile(username) {
-  alert(username)
   window.location = "ask.html?user="+username
 }
 
