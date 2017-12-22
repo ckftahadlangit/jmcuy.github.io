@@ -1,4 +1,4 @@
-Cmsc 127 project: AskFm Lite
+Cmsc 127 project title: AskFm Lite
 
 Our project is a modified clone of AskFm.
 
@@ -22,3 +22,6 @@ Original features of askFm including its policy, copyrights, and about are still
 The link for the demo version of the askFm clone is located below.
 
 Link to the website clone: https://jmcuy.github.io/
+
+GROUP MEMBERS:
+JHESSA MAE UY, CHEZKA TAHADLANGIT, KRISHIA BELLO, MARY JEAN CUGAL
